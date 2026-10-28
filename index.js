@@ -55,7 +55,7 @@ let Characteristic, PlatformAccessory, Service, Categories, AdaptiveLightingCont
 module.exports = function(homebridge) {
     ({
         platformAccessory: PlatformAccessory,
-        hap: {Characteristic, Service, AdaptiveLightingController, Accessory: {Categories}, uuid: UUID}
+        hap: {Categories, Characteristic, Service, AdaptiveLightingController, uuid: UUID}
     } = homebridge);
 
     homebridge.registerPlatform(PLUGIN_NAME, PLATFORM_NAME, TuyaLan, true);
