@@ -1,3 +1,6 @@
+> [!NOTE]
+> **About this fork.** I don't know if I want to maintain this, but I thought I'd put it up. It is [iRayanKhan/homebridge-tuya](https://github.com/iRayanKhan/homebridge-tuya) 3.1.1 with one fix so it runs on Homebridge 2: Homebridge 2 removed `hap.Accessory.Categories`, so the plugin now reads `hap.Categories`. Without the fix, discovered devices never register, and the only sign in the log is "Discovery - Failed to parse discovery response". Tested with two Tuya SP10 plugs (protocol 3.1) on Homebridge 2.4.0.
+
 <p align="center">
     <img src="https://raw.githubusercontent.com/iRayanKhan/homebridge-tuya/main/assets/Tuya-Plugin-Branding.png" height="100"><br>
 </p>
